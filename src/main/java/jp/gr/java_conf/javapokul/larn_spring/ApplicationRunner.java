@@ -2,12 +2,13 @@ package jp.gr.java_conf.javapokul.larn_spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
  * アプリケーションの起動クラス.
  * @author rtaba
  */
-@SpringBootApplication
+@SpringBootApplication(exclude=DataSourceAutoConfiguration.class)
 public class ApplicationRunner {
 
 	/**
