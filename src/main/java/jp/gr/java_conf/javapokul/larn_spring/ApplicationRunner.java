@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ApplicationRunner {
 
 	/**
-	 * サンプルアプリケーションの起動メソッド.
+	 * アプリケーションの起動メソッド.
 	 * @param args コマンド引数
 	 */
 	public static void main(String[] args) {
