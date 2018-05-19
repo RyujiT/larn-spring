@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring.entity;
+package jp.gr.java_conf.javapokul.learn_spring.entity;
 
 import java.io.Serializable;
 import java.util.Date;
