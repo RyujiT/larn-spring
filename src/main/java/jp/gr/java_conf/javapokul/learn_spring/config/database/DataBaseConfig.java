@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring.config.database;
+package jp.gr.java_conf.javapokul.learn_spring.config.database;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +21,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import jp.gr.java_conf.javapokul.larn_spring.interceptor.database.DynamicRoutingDatasourceResolver;
+import jp.gr.java_conf.javapokul.learn_spring.interceptor.database.DynamicRoutingDatasourceResolver;
 
 /**
  * データベース関連定義クラス.<br>
@@ -34,7 +34,7 @@ import jp.gr.java_conf.javapokul.larn_spring.interceptor.database.DynamicRouting
  */
 @Configuration
 @EnableTransactionManagement(order=Integer.MAX_VALUE)
-@EnableJpaRepositories("jp.gr.java_conf.javapokul.larn_spring.repository")
+@EnableJpaRepositories("jp.gr.java_conf.javapokul.learn_spring.repository")
 public class DataBaseConfig {
 
 	/** 読み込み専用データソース. */

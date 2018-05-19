@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>jp.gr.java_conf.javapokul</groupId>
-	<artifactId>larn-spring</artifactId>
+	<artifactId>learn-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 
@@ -48,6 +48,12 @@
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
+		</dependency>
+
+		<!-- using of Mail. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 
 		<!-- for Developments. -->

@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring.interceptor.database;
+package jp.gr.java_conf.javapokul.learn_spring.interceptor.database;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import jp.gr.java_conf.javapokul.larn_spring.config.database.DataSourceName;
+import jp.gr.java_conf.javapokul.learn_spring.config.database.DataSourceName;
 
 /**
  * 動的データソースルーティングインターセプター.<br>

@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring.controller;
+package jp.gr.java_conf.javapokul.learn_spring.controller;
 
 import java.text.MessageFormat;
 import java.util.Calendar;
@@ -13,8 +13,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import jp.gr.java_conf.javapokul.larn_spring.entity.MApiKey;
-import jp.gr.java_conf.javapokul.larn_spring.repository.MApiKeyRepository;
+import jp.gr.java_conf.javapokul.learn_spring.entity.MApiKey;
+import jp.gr.java_conf.javapokul.learn_spring.repository.MApiKeyRepository;
 
 /*
  * FIXME あとで削除!

@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring;
+package jp.gr.java_conf.javapokul.learn_spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package jp.gr.java_conf.javapokul.larn_spring.config.database;
+package jp.gr.java_conf.javapokul.learn_spring.config.database;
 
 import javax.sql.DataSource;
 
