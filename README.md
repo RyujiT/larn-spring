@@ -1,2 +1,2 @@
-# larn-spring
+# learn-spring
 Spring学習用
