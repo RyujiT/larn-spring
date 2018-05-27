@@ -6,9 +6,11 @@ import org.springframework.mail.MailException;
 import org.springframework.mail.MailParseException;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jp.gr.java_conf.javapokul.learn_spring.model.request.SendMailRequest;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -33,11 +35,12 @@ public class MailController {
 	 * @return 送信情報
 	 */
 	@RequestMapping("/mail/send")
-	public String sendMail(String to, String subject, String text) {
+	public String sendMail(@Validated SendMailRequest request) {
+
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setTo(to);
-		message.setSubject(subject);
-		message.setText(text);
+		message.setTo(request.getTo());
+		message.setSubject(request.getSubject());
+		message.setText(request.getText());
 		
 		StringBuilder result = new StringBuilder("[").append(message.toString()).append("]");
 		try {

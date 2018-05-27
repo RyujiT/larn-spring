@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import jp.gr.java_conf.javapokul.learn_spring.entity.MApiKey;
 
 /**
- * APIキーのリポジトリ.
+ * APIキーマスタのリポジトリ.
  * @author rtaba
  */
 @Repository
