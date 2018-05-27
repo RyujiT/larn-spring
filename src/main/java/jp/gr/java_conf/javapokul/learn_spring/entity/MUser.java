@@ -1,7 +1,6 @@
 package jp.gr.java_conf.javapokul.learn_spring.entity;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +14,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * APIキーマスタのエンティティ.
+ * ユーザーマスタのエンティティ.
  * @author rtaba
  */
 @Getter
@@ -23,17 +22,17 @@ import lombok.ToString;
 @ToString
 @Entity
 @Proxy(lazy=false)
-@Table(name="M_API_KEY")
-public class MApiKey implements Serializable {
+@Table(name="M_USER")
+public class MUser implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-    /** APIキー. */
+    /** ユーザー名. */
 	@Id
+	@Column(name="USER_NAME")
+	private String userName;
+
+	/** APIキー. */
 	@Column(name="API_KEY")
 	private String apiKey;
-
-    /** 有効期限. */
-	@Column(name="EXPIRATION_DATE")
-	private Date expirationDate;
 }
